@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+nav {
+  overflow: hidden;
+  background-color: #333;
+}
+nav p {
+  color: white;
+  text-align: center;
+}
+nav span {
+  color: white;
+  display: block;
+  padding: 17px 20px;
+  float: right;
+}
+nav span:hover {
+  background-color: #bababa;
+  color: #6b6b6b;
+  transition: 0.5s;
+}
+nav a {
+  color: white;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #bababa;
+  color: #6b6b6b;
+  transition: 0.5s;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.726);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 1.0s;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #cccccc;
+  display: block;
+  transition: 0.8s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav button {
+  background-color: transparent;
+  color:white;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-decoration: none;
+}
+footer p {
+  text-align: center;
+  color: white;
+}
+header {
+  background-color:transparent;
+  color: black;
+  padding: 30px;
+  text-align: center;
+}
+header h1 {
+  font-size: 60px;
+}
