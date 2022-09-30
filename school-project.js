@@ -25,7 +25,7 @@ function closeNav() {
 }
 
 var i = 0;
-var txt = 'School Project';
+var txt = 'Javier Jaramillo';
 var speed = 100;
 
 function typeWriter() {
@@ -53,4 +53,4 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-console.log('sitev0.0.4')
+console.log('sitev0.0.4.2')
