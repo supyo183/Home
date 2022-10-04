@@ -4,7 +4,6 @@ html, body {
   margin: 0;
   background-color: white;
   color: black;
-  overflow: hidden;
 }
 nav {
   overflow: hidden;
@@ -42,6 +41,7 @@ nav a:hover {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: 15s;
 }
 .sticky + .content {
   padding-top: 60px;
@@ -84,6 +84,7 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   text-decoration: none;
+  padding: 15px;
 }
 footer p {
   text-align: center;
@@ -97,4 +98,7 @@ header {
 }
 header h1 {
   font-size: 60px;
+}
+.iframe-1 {
+  position:static;
 }
