@@ -2,8 +2,8 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: white;
-  color: black;
+  background-color: rgb(19, 15, 15);
+  color: rgb(255, 255, 255);
 }
 nav {
   overflow: hidden;
@@ -20,8 +20,8 @@ nav span {
   float: right;
 }
 nav span:hover {
-  background-color: #bababa;
-  color: #6b6b6b;
+  background-color: #6b6b6b;
+  color: #ffffff;
   transition: 0.5s;
 }
 nav a {
@@ -33,8 +33,8 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  background-color: #bababa;
-  color: #6b6b6b;
+  background-color: #6b6b6b;
+  color: #ffffff;
   transition: 0.5s;
 }
 .sticky {
@@ -81,7 +81,7 @@ nav a:hover {
   color:white;
 }
 footer {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(66, 66, 66, 0.61);
   color: white;
   text-decoration: none;
   padding: 15px;
@@ -92,12 +92,15 @@ footer p {
 }
 header {
   background-color:transparent;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 15px;
   text-align: center;
 }
 header h1 {
   font-size: 60px;
+}
+header h3 {
+  font-size: 30px;
 }
 .iframe-1 {
   position:static;

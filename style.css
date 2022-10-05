@@ -2,8 +2,8 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: white;
-  color: black;
+  background-color: rgb(19, 15, 15);
+  color: rgb(255, 255, 255);
   overflow: hidden;
 }
   nav {
@@ -81,7 +81,7 @@ nav a:hover {
   color:white;
 }
 footer {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(66, 66, 66, 0.61);
   color: white;
   text-decoration: none;
 }
@@ -91,7 +91,7 @@ footer p {
 }
 header {
   background-color:transparent;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 30px;
   text-align: center;
 }
