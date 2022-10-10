@@ -146,13 +146,13 @@ header h3 {
     border-radius: 20px;
 }
 .file {
-    width: 100%; background-color: #CC0000;
+    width: 100%; background-color: #a30000;
 }
 .web {
-    width: 75%; background-color: #CC0000;
+    width: 75%; background-color: #a30000;
 }
 .Vroid {
-    width: 57%; background-color: #CC0000;
+    width: 57%; background-color: #a30000;
 }
 * {
     box-sizing: border-box;
