@@ -149,10 +149,10 @@ header h3 {
     width: 100%; background-color: #a30000;
 }
 .web {
-    width: 75%; background-color: #a30000;
+    width: 80%; background-color: #a30000;
 }
-.Vroid {
-    width: 57%; background-color: #a30000;
+.Other {
+    width: 65%; background-color: #a30000;
 }
 * {
     box-sizing: border-box;
