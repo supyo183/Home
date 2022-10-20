@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     background-color: rgb(19, 15, 15);
     color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
 }
 nav {
     overflow: hidden;
