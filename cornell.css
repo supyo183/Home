@@ -1,0 +1,268 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(19, 15, 15);
+    color: rgb(255, 255, 255);
+    scroll-behavior: smooth;
+}
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+nav p {
+    color: white;
+    text-align: center;
+}
+nav span {
+    color: white;
+    display: block;
+    padding: 17px 20px;
+    float: right;
+}
+nav span:hover {
+    background-color: #6b6b6b;
+    color: #ffffff;
+    transition: 0.5s;
+}
+nav a {
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 17px 20px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #6b6b6b;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.726);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1.0s;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #cccccc;
+    display: block;
+    transition: 0.8s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidenav button {
+    background-color: transparent;
+    color:white;
+}
+.side {
+    background-color: #cccccc;
+    left:0;
+    height: 100%;
+    top:0;
+    position:static;
+    width: 50px;
+    display: none;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 94.4%;
+    overflow: hidden;
+    z-index: -1;
+}
+.main {
+    flex:2%;
+    background-color: rgb(68, 68, 68);
+    height: 100%;
+    width: 100%;
+}
+.container {
+    flex:98%;
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(68, 68, 68);
+    top: 9%;
+}
+.container img {
+    height: 650px;
+    width: auto;
+}
+@media print {
+    .container {
+        background-color: white;
+        line-height: 18px;
+        font-size: 14px;
+        height: 100%;
+        width: 100%;
+        position:fixed;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+}
+.text1 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 275px;
+    height: 360px;
+    z-index: 7;
+    left: 684px;
+    bottom: 115px;
+    position: absolute;
+    top: 170px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+}
+.text2 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 123px;
+    height: 360px;
+    z-index: 7;
+    left: 557px;
+    bottom: 115px;
+    position: absolute;
+    top: 170px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+}
+.text3 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 400px;
+    height: 65px;
+    z-index: 7;
+    left: 558px;
+    bottom: 115px;
+    position: absolute;
+    top: 550px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+    font-size: 14.4px;
+}
+.text4 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 400px;
+    height: 23px;
+    z-index: 7;
+    left: 559px;
+    bottom: 115px;
+    position: absolute;
+    top: 125px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+    font-size: 10px;
+}
+.text5 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 100px;
+    height: 10px;
+    z-index: 7;
+    left: 582px;
+    bottom: 115px;
+    position: absolute;
+    top: 83px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+    font-size: 7px;
+}
+.text6 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 168px;
+    height: 10px;
+    z-index: 7;
+    left: 793px;
+    bottom: 115px;
+    position: absolute;
+    top: 43px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+    font-size: 8px;
+}
+.text7 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 80px;
+    height: 10px;
+    z-index: 7;
+    left: 805px;
+    bottom: 115px;
+    position: absolute;
+    top: 63px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+    font-size: 8px;
+}
+.text8 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 37px;
+    height: 10px;
+    z-index: 7;
+    left: 920px;
+    bottom: 115px;
+    position: absolute;
+    top: 63px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+    font-size: 8px;
+}
+.current {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: hidden;
+    width: 168px;
+    height: 13px;
+    z-index: 7;
+    left: 827px;
+    bottom: 115px;
+    position: absolute;
+    top: 80px;
+    resize: none;
+    overflow: hidden;
+    text-overflow: hidden;
+    font-size: 12px;
+    user-select: none;
+}
+::selection {
+    background-color: rgba(0, 0, 0, 0.247);
+    color: rgb(207, 26, 26);
+}
