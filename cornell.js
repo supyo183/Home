@@ -27,6 +27,22 @@ function print() {
     var element = document.getElementById("yes-8");
     element.classList.add('no-print')
 }
+function button() {
+    var element = document.getElementById("cover");
+   element.classList.toggle("cover");   
+}
+
+function agr() {
+    var element = document.getElementById("back");
+    element.style.display = "none";
+}
+function dis() {
+    var elemental = document.getElementById("container");
+    var elements = document.getElementById("back");
+    elemental.style.display = "none";
+    elements.style.display = "none";
+}
+console.log('sitev0.3.2')
 var datetime = new Date();
 console.log(datetime);
 document.getElementById("time").textContent = datetime;
@@ -35,7 +51,5 @@ function refreshTime() {
     const dateString = new Date().toLocaleString();
     const formattedString = dateString.replace(", ", " - ");
     timeDisplay.textContent = formattedString;
-  }
-    setInterval(refreshTime, 1000);
- 
-console.log('sitev0.2.1')
+}
+setInterval(refreshTime, 1000);

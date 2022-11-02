@@ -11,6 +11,7 @@
     <link href="cornell.css" rel="stylesheet" type="text/css" />
   </head>
   <body onload="print()"></body>
+  <body onload="getElementById('container').style.display='block'"></body>
   <body>
     <nav id="navbar" id="yes"><a href="index.html" id="yes_1">Home</a><span style="cursor:pointer;text-align: left;" onclick="openNav()" id="yes_2">Menu</span><p id="yes_3">supyo183</p></nav>
     <div class="nav" id="yes-1"></div>
@@ -19,7 +20,7 @@
         <div class="contain" style="width: 50px;height: 50px; background: white;" id="yes-4"></div><div class="contain" style="width: 50px;height: 50px; background: rgb(173, 173, 173);" id="yes-5"></div><div class="contain" style="width: 50px;height: 50px; background: rgb(131, 131, 131);" id="yes-6"></div>
       </div>
       <div class="main" id="yes-7">
-        <div class="container" id="contain">
+        <div class="container" id="container">
           <span id="time" class="current"></span>
           <textarea rows="1"  maxlength="8" class="text8" spellcheck="false"></textarea>
           <textarea rows="1"  maxlength="18" class="text7" spellcheck="false"></textarea>
@@ -41,7 +42,34 @@
 <style type="text/css" media="print">
   .no-print { display: none; }
 </style>
+<div class="back-contain" id="back"style="opacity: 1; background:black; height:100%; width: 100%; position: absolute; top: 0;z-index: 8;">
+  <div class="contain" id="cont">
+    <div class="tos"><p>Due to the fact that this website is being hosted on github, this website had been marked as unsecure. This website currently takes date information only when the website is open. The website should NOT save any text if it were to be reloaded by the user. It is only possible for the tezt to remain if the website is opened through reopen last closed page command. Sharing the text with a teacher requires users to take a screenshot or snip as the print button is still a WIP. Just like the print button, the page is still a WIP, this means that there are still unadded features, no support for multiple screen sizes, and no solid interface. Users must also agree to these conditions before gaining access to this page's content.<br> 1. Users should not attempt to take the source(s) and claim them as their own.<br> 2. Users should not attempt to claim this page or website as their own as the developer would not even attempt to do it.<br> 3. Users are to agree to not complain about the annoyance of this popup or how only one computer is able to use this page freely.<br> 4. Users agree to inform about any errors (except for the error which starts with "Access to internal reasource at") in github.<br>  5. Users who have any problems with anything in this page, should report it in github with a very low chance of changes being made.<br>If a user wants to submit a interface design, they can attempt to suggest it in github.</p><!--<p style="font-size:15px;height: 16px;">Notice:</p><p>This page was created for the sole purpose of being able to edit a cornell note template. The only thing you can only do is type text as this is still a WIP. Since this is still being developed, there is no way of saving the added text or printing the page to be a physical copy. The only way for the text to be saved would be through a screenshot, of course it is recommended to crop the screenshot to fit the size of the cornell note(s).<br>  Since this website is currently in github, this website is marked as a security risk. The only information that the website takes would be information about the date as it is needed for the date section. The website may eventually use other information as it's updated.<br> There will be some things that must be taken into account by the user.<br>1. The website was not given a feature of saving text as the code needed isnt learned yet. This means that the one respondsible for having a way of keeping what writing you have is on the user.<br>2. This website will be going through many changes as new features are added.<br>3. There is a character limit on each area of where you can type. It is also recommended that more pages are opened as there is no way of making more pages.<br>3a. Overflowing the text will push previous text upward and become unaccessiable.<br>4. The feature of spellchecking has been disabled and may be eventually activated.<br>5. Everytime this page is loaded, this would appear.<br>TOS:<br> Users who have knowledge of finding the source of the website should refrain from making a full copy the website (fork) and branding it as theirs. Users are allowed to use the code as a reference and may use the code which is related. Otherwise no user should be using the code at all. Users are also expected to not attempt to dox the creator of the website. Users should report and error/problems encountered in the "issues" tab of the <a href="https://github.com/supyo183/Home">github</a> for it to be investigated.</p>-->
+    </div>
+    <input type="checkbox" onchange="button()" id="check">I have read the conditions
+    <button type="button" onclick="dis()" class="cancelbtn" style="float: right;">I diagree with the conditions</button>
+    <div class="contain2">
+      <div class="cover" id="cover"><p></p></div>
+      <button type="button" onclick="agr()" class="agreebtn" id="dis" style="float: left;" style="z-index:-1;">I agree to the conditions</button>
+    </div>
+  </div>
+</div>
 
+<!--<div class="contain" id="container">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('contain').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="contain">
+        <input type="checkbox" checked="checked" name="remember">
+      </label>
+    </div>pages are opened 
+    <div class="contain" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href=""></a></span>
+    </div>
+  </form>
+</div>-->
 
 
 <div id="mySidenav" class="sidenav">
