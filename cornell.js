@@ -25,6 +25,7 @@ function print() {
     var element = document.getElementById("yes-6");
     var element = document.getElementById("yes-7");
     var element = document.getElementById("yes-8");
+    var element = document.getElementById("back");
     element.classList.add('no-print')
 }
 function button() {
