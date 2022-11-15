@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(67, 70, 105);
+  color: white;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.navigation {
+  overflow: hidden;
+  background-color: rgb(32, 36, 83);
+  width: min-content;
+  height: 100%;
+  position: fixed;
+}
+.navigation span{
+  display:block;
+  padding: 10px 13px;
+  transition: 1s;
+}
+.navigation span:hover{
+  background-color: rgb(121, 121, 180);
+  color: black;
+  transition: 0.7s;
+}
+.navigation a {
+  background-color: rgb(32, 36, 83);
+  color: white;
+  display: block;
+  padding: 10px 13px;
+  text-decoration: none;
+  transition: 1s;
+}
+.navigation a:hover {
+  background-color: rgb(121, 121, 180);
+  color: black;
+  transition: 0.7s;
+}
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: auto;
+  padding-top: 60px;
+  transition: 2s;
+  background-color: rgba(72, 47, 131, 0.596);
+  overflow: hidden;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25;
+  color: white;
+  display: block;
+  transition: 1s;
+}
+.sidenav a:hover {
+  color: #ffffff;
+  background-color: rgb(121, 121, 180);
+  transition: 0.7s;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 30px;
+  margin-left: auto;
+}
+.sidenav button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+.sidenav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.colum {
+  width: 25%;
+  float: left;
+  padding: 10px;
+  height: 100%;
+}
+footer {
+  height: min-content;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(47, 41, 100);
+}
+footer p {}
+header {
+  background-color: rgb(43, 36, 102);
+  color: white;
+  padding: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+header h1 {
+  font-size: 25px;
+}
+::selection {}
+* {
+  scrollbar-width: none;
+  scrollbar-color: #4100a1 #ffffff;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #4100a1;
+  border-radius: 26px;
+  border: 0px none #ffffff;
+}
