@@ -2,99 +2,121 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: rgb(19, 15, 15);
-  color: rgb(255, 255, 255);
+  background-color: rgb(67, 70, 105);
+  color: white;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.navigation {
   overflow: hidden;
-}
-  nav {
-  overflow: hidden;
-  background-color: #333;
-}
-nav p {
-  color: white;
-  text-align: center;
-}
-nav span {
-  color: white;
-  display: block;
-  padding: 17px 20px;
-  float: right;
-}
-nav span:hover {
-  background-color: #bababa;
-  color: #6b6b6b;
-  transition: 0.5s;
-}
-nav a {
-  color: white;
-  float: left;
-  display: block;
-  text-align: center;
-  padding: 17px 20px;
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: #bababa;
-  color: #6b6b6b;
-  transition: 0.5s;
-}
-.sticky {
+  background-color: rgb(32, 36, 83);
+  width: min-content;
+  height: 100%;
   position: fixed;
-  top: 0;
-  width: 100%;
 }
-.sticky + .content {
-  padding-top: 60px;
+.navigation span{
+  display:block;
+  padding: 10px 13px;
+  transition: 1s;
+}
+.navigation span:hover{
+  background-color: rgb(121, 121, 180);
+  color: black;
+  transition: 0.7s;
+}
+.navigation a {
+  background-color: rgb(32, 36, 83);
+  color: white;
+  display: block;
+  padding: 10px 13px;
+  text-decoration: none;
+  transition: 1s;
+}
+.navigation a:hover {
+  background-color: rgb(121, 121, 180);
+  color: black;
+  transition: 0.7s;
 }
 .sidenav {
   height: 100%;
   width: 0%;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.726);
-  overflow-x: hidden;
+  overflow-x: auto;
   padding-top: 60px;
-  transition: 1.0s;
+  transition: 2s;
+  background-color: rgba(72, 47, 131, 0.596);
+  overflow: hidden;
 }
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #cccccc;
+  font-size: 25;
+  color: white;
   display: block;
-  transition: 0.8s;
+  transition: 1s;
 }
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #ffffff;
+  background-color: rgb(121, 121, 180);
+  transition: 0.7s;
 }
 .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  font-size: 30px;
+  margin-left: auto;
 }
 .sidenav button {
   background-color: transparent;
-  color:white;
+  color: white;
+  border: none;
+}
+.sidenav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.colum {
+  width: 25%;
+  float: left;
+  padding: 10px;
+  height: 100%;
 }
 footer {
-  background-color: rgba(66, 66, 66, 0.61);
-  color: white;
-  text-decoration: none;
-}
-footer p {
+  height: min-content;
+  width: 100%;
   text-align: center;
-  color: white;
+  text-decoration: none;
+  background-color: rgb(47, 41, 100);
 }
+footer p {}
 header {
-  background-color:transparent;
-  color: rgb(255, 255, 255);
-  padding: 30px;
+  background-color: rgb(43, 36, 102);
+  color: white;
+  padding: 5px;
+  padding-bottom: 15px;
   text-align: center;
 }
 header h1 {
-  font-size: 60px;
+  font-size: 25px;
+}
+::selection {}
+* {
+  scrollbar-width: none;
+  scrollbar-color: #4100a1 #ffffff;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #4100a1;
+  border-radius: 26px;
+  border: 0px none #ffffff;
 }

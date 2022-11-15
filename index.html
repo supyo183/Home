@@ -1,42 +1,44 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-16">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>supyo183 Home</title>
+    <title>Home</title>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body onload="typeWriter()"></body>
   <body>
-    <nav id="navbar"><a href="javascript:void(0)" onclick="e()">Home</a><span style="cursor:pointer;text-align: left;" onclick="openNav()">Menu</span><p>supyo183</p></nav>
+    <div class="navigation" id="navig"><span style="cursor:pointer;text-align: left;font-size: 17px" onclick="openNav()" class="fa fa-bars"></span></span><a href="javascript:void(0)" onclick="e()" class="fa fa-home" style="font-size: 17px;"></a><a href="" class="fa fa-twitter" style="font-size: 17px;"></a><a href="" class="fa fa-github" style="font-size: 17px;"></a><a href="" class="fa fa-reddit" style="font-size: 17px;"></a><a href="" class="fa fa-steam" style="font-size: 17px;"></a><a href="" class="fa fa-youtube-play" style="font-size: 17px;"></a></div>
     <header>
       <h1 id="header"></h1>
-      <h4> An supyo183 project</h4>
     </header>
-    <div class="sect-1">
-      <h1>UPDATE 11/11/2022</h1>
-      <p>Development for this page had started on 11/10/2022. A new interface for this page is underdevelopement.</p>
-      <hr>
-      <h1>STARTING DEVELOPMENT FOR THIS PAGE SOON</h1>
-    </div>
-    <div class="sect-2">
-    </div>
-    <footer>
-      <h3 style="text-align: center;">Contact:</h3>
-      <p>Email: supyodev@gmail.com</p>
-      <p style="position: relative;">This page is not apart of "school project" and is a personal project that will be used from now on</p><p style="text-align: center;">&copy; 2022 supyo183</p>
-    </footer>
+    <div class="body"></div>
+    <footer>&copy; 2022 supyo183</footer>
     <script src="script.js"></script>
   </body>
 </html>
 
+
+
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="school-project.html">school project</a>
-  <a href="cornell.html">cornell-editor</a>
-  <a href="javascript:void(0)"></a>
+  <button href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="glyphicon glyphicon-remove"></i></button>
+    <div class="colum">
+      <a href="javascript:void(0)">Cornell-editor</a>
+    </div>
+    <div class="colum">
+      <s><a href="javascript:void(0)">Link 2</a></s>
+    </div>
+    <div class="colum">
+      <s><a href="javascript:void(0)">Link 3</a></s>
+    </div>
+    <div class="colum">
+      <s><a href="javascript:void(0)">Link 4</a></s>
+    </div>
 </div>
