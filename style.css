@@ -79,6 +79,7 @@ nav a:hover {
 .sidenav button {
   background-color: transparent;
   color:white;
+  border: none;
 }
 footer {
   background-color: rgba(66, 66, 66, 0.61);
