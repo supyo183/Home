@@ -19,14 +19,14 @@ function typeWriter() {
 function e() {
   alert('Baka! You are already home!')
 }
-//window.onscroll = function() {myFunction()};
-//var navbar = document.getElementById("navbar");
-//var sticky = navbar.offsetTop;
-//function myFunction() {
-//  if (window.pageYOffset >= sticky) {//
-//    navbar.classList.add("sticky")
-//  } else {
-//    navbar.classList.remove("sticky");
-//  }
-//}
+var datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime;
+function refreshTime() {
+    const timeDisplay = document.getElementById("time");
+    const dateString = new Date().toLocaleString();
+    const formattedString = dateString.replace(", ", " - ");
+    timeDisplay.textContent = formattedString;
+}
+setInterval(refreshTime, 1000);
 console.log('sitev0.4.0')

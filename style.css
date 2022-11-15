@@ -93,7 +93,9 @@ footer {
   text-decoration: none;
   background-color: rgb(47, 41, 100);
 }
-footer p {}
+footer span {
+  text-align: center;
+}
 header {
   background-color: rgb(43, 36, 102);
   color: white;
