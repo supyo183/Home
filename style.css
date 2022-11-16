@@ -106,6 +106,13 @@ header {
 header h1 {
   font-size: 25px;
 }
+.le-body {
+  background-color: #454091;
+  color: white;
+  padding: 10px;
+  position: relative;
+  left: 41.797px;
+}
 ::selection {}
 * {
   scrollbar-width: none;
