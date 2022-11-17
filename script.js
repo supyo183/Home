@@ -8,7 +8,7 @@ function closeNav() {
 }
 var i = 0;
 var txt = 'Home';
-var speed = 100;
+var speed = 150;
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("header").innerHTML += txt.charAt(i);
@@ -29,4 +29,4 @@ function refreshTime() {
     timeDisplay.textContent = formattedString;
 }
 setInterval(refreshTime, 1000);
-console.log('sitev0.4.0')
+console.log('sitev0.4.3')

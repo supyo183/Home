@@ -113,7 +113,10 @@ header h1 {
   position: relative;
   left: 41.797px;
 }
-::selection {}
+::selection {
+  background-color: #4100a1;
+  color: white;
+}
 * {
   scrollbar-width: none;
   scrollbar-color: #4100a1 #ffffff;
