@@ -1,10 +1,10 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "100%";
-    document.getElementById("navig").style.width = "0";
+    document.getElementById("navig").style.display = "none";
 }
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("navig").style.width = "min-content";
+    document.getElementById("navig").style.display = "block";
 }
 var i = 0;
 var txt = 'Home';
@@ -29,4 +29,4 @@ function refreshTime() {
     timeDisplay.textContent = formattedString;
 }
 setInterval(refreshTime, 1000);
-console.log('sitev0.4.3')
+console.log('sitev0.5')

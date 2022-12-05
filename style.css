@@ -7,7 +7,6 @@ html, body {
   overflow: scroll;
   overflow-y: scroll;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 .navigation {
   overflow: hidden;
@@ -110,9 +109,16 @@ header h1 {
 .le-body {
   background-color: #454091;
   color: white;
-  padding: 10px;
+  padding: 7px;
   position: relative;
+  width: 100%;
   left: 41.797px;
+}
+.le-body p {
+  text-align:left;
+  white-space: pre-wrap;
+  overflow-wrap: normal;
+  width: 1473px;
 }
 ::selection {
   background-color: #4100a1;
@@ -133,20 +139,17 @@ header h1 {
   border-radius: 26px;
   border: 0px none #ffffff;
 }
-.bg1 {
+/*.bg1 {
   position: relative;
   opacity: 0.65;
-  background-attachment: fixed;
+  background-attachment:scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg1 {
-  background-image: url("");
-  height: 100px;
-}
-@media only screen and (max-device-width: 1366px) {
-  .bg1 {
-    background-attachment: scroll;
-  }
-}
+  background-image: url("images/image-1.png");
+  height: 899px;
+  width: 100%;
+  left: 41.797px;
+}*/
