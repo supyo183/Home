@@ -1,4 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cornell Editor</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="cornell.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--<span class="glyphicon glyphicon-remove"></span>-->
+    <nav><!--<span style="cursor:pointer;text-align: left;font-size: 17px" onclick="openNav()" class="fa fa-bars"></span>--><span style="cursor:pointer;text-align:left;font-size:17px" onclick="alert('Currently deactivated')" class="fa fa-bars"></span><a href="index.html" class="fa fa-home" style="font-size: 17px;"></a><b style="font-size: 15px;user-select:none;">Tools</b> <i class="fa fa-arrow-right" style="text-align: left;font-size:17px;"></i><span style="float:right" onclick="alert('Disabled')"><svg style="height: 17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M331 315l158.4-215L460.1 70.6 245 229 331 315zm-187 5l0 0V248.3c0-15.3 7.2-29.6 19.5-38.6L436.6 8.4C444 2.9 453 0 462.2 0c11.4 0 22.4 4.5 30.5 12.6l54.8 54.8c8.1 8.1 12.6 19 12.6 30.5c0 9.2-2.9 18.2-8.4 25.6L350.4 396.5c-9 12.3-23.4 19.5-38.6 19.5H240l-25.4 25.4c-12.5 12.5-32.8 12.5-45.3 0l-50.7-50.7c-12.5-12.5-12.5-32.8 0-45.3L144 320zM23 466.3l63-63 70.6 70.6-31 31c-4.5 4.5-10.6 7-17 7H40c-13.3 0-24-10.7-24-24v-4.7c0-6.4 2.5-12.5 7-17z"/></svg></span><span style="float:right" onclick="alert('Disabled')"><svg style="height: 17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+      <path d="M128 64c0-17.7 14.3-32 32-32H352c17.7 0 32 14.3 32 32s-14.3 32-32 32H293.3L160 416h64c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H90.7L224 96H160c-17.7 0-32-14.3-32-32z"/></svg></span><span style="float:right" onclick="alert('Disabled')"><svg style="height: 17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+        <path d="M32 32C14.3 32 0 46.3 0 64V256 448c0 17.7 14.3 32 32 32H192c70.7 0 128-57.3 128-128c0-46.5-24.8-87.3-62-109.7c18.7-22.3 30-51 30-82.3c0-70.7-57.3-128-128-128H32zM160 224H64V96h96c35.3 0 64 28.7 64 64s-28.7 64-64 64zM64 288h96 32c35.3 0 64 28.7 64 64s-28.7 64-64 64H64V288z"/></svg></span></nav>
+    <div class="row">
+      <textarea placeholder="Your summary" style="background-color:transparent;color:black;position:absolute;top:800px;left:490px;height:90px;resize:none;overflow:hidden;text-overflow:clip;border:hidden;width:557px;font-size:17px;"></textarea>
+      <textarea placeholder="Your notes" style="background-color:transparent;color:black;position:absolute;top:277px;left:664px;height:500px;resize:none;overflow:hidden;text-overflow:clip;border:hidden;width:383px;font-size:16px;"></textarea>
+      <textarea placeholder="Your subheaders?" style="background-color:transparent;color:black;position:absolute;top:277px;left:490px;height:500px;resize:none;overflow:hidden;text-overflow:clip;border:hidden;width:174px;font-size:16px;"></textarea>
+      <textarea placeholder="Your Question" style="background-color:transparent;color:black;position:absolute;top:205px;left:493px;height:43px;resize:none;overflow:hidden;text-overflow:clip;border:hidden;width:550px" rows="2"></textarea>
+      <input type="text" placeholder="Your class" style="color: black;background-color:transparent;top:129px;left:830px;position:absolute;font-size:13px" maxlength="18">
+      <input type="text" placeholder="Your name" style="background-color: transparent;color:black;position:absolute;top:100px;left:813px; width: 250px" maxlength="30">
+      <input type="number" placeholder="#" min="1" max="8" style="color: black;background-color:transparent;position:absolute;top: 120px;left:1000px;font-size:20px">
+      <input type="text" placeholder="Your topic" style="background-color: transparent; color:black; top:150px; left:522px;position:absolute" maxlength="18">
+      <span id="time" style="top:155px;left:870px;height:min-content;color:black;position:absolute;user-select:none"></span>
+      <p style="text-align: center;user-select:none;"><img src="cornell.jpg" style="height: 27%; width:630px;">
+      </div>
+    </div>
+    <script src="cornell.js"></script>
+  </body>
+</html>
+<!--<!doctype html>
 <html>
   <head>
     <meta charset="utf-16">
@@ -60,4 +96,24 @@
   <a href="school-project.html">school project</a>
   <a href=""></a>
   <a href=""></a>
+</div>
+-->
+
+
+
+
+<div id="mySidenav" class="sidenav">
+  <button href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="glyphicon glyphicon-remove"></i></button>
+    <div class="colum">
+      <s><a href="javascript:void(0)">Link 1</a></s>
+    </div>
+    <div class="colum">
+      <s><a href="javascript:void(0)">Link 2</a></s>
+    </div>
+    <div class="colum">
+      <s><a href="javascript:void(0)">Link 3</a></s>
+    </div>
+    <div class="colum">
+      <s><a href="javascript:void(0)">Link 4</a></s>
+    </div>
 </div>

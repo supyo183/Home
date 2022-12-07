@@ -87,7 +87,7 @@ html, body {
   height: 100%;
 }
 footer {
-  height: min-content;
+  padding: 5px;
   width: 100%;
   text-align: center;
   text-decoration: none;

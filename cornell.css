@@ -2,11 +2,114 @@ html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: rgb(19, 15, 15);
+    background-color: rgb(36, 36, 36);
     color: rgb(255, 255, 255);
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 nav {
+    overflow:hidden;
+    background-color: rgb(95, 62, 139);
+    width:100%;
+    height:min-content;
+    color: black;
+}
+nav span{
+    display:block;
+    padding: 10px 13px;
+    transition: 1s;
+}
+nav span:hover{
+    background-color: rgb(121, 121, 180);
+    color: black;
+    transition: 0.7s;
+}
+nav a {
+    color: black;
+    display: block;
+    padding: 10px 13px;
+    text-decoration: none;
+    transition: 1s;
+}
+nav a:hover {
+    background-color: rgb(121, 121, 180);
+    color: black;
+    transition: 0.7s;
+}
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: auto;
+    padding-top: 60px;
+    transition: 2s;
+    background-color: rgba(72, 47, 131, 0.596);
+    overflow: hidden;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25;
+    color: white;
+    display: block;
+    transition: 1s;
+}
+.sidenav a:hover {
+    color: #ffffff;
+    background-color: rgb(121, 121, 180);
+    transition: 0.7s;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: auto;
+}
+.sidenav button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.sidenav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.colum {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+* {
+    scrollbar-width: none;
+    scrollbar-color: #4100a1 #ffffff;
+}
+*::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #4100a1;
+    border-radius: 26px;
+    border: 0px none #ffffff;
+}
+input {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+}
+input:focus {
+    outline: none;
+}
+/*nav {
     overflow: hidden;
     background-color: #333;
 }
@@ -306,4 +409,4 @@ nav a:hover {
     position: absolute;
     background-color: rgb(255, 255, 255);
     user-select: none;
-}
+}*/
